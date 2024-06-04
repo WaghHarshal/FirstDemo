@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        function Ad(x,y)
+        {
+            var add = parseInt(x)+ parseInt(y)
+
+            document.getElementById("LLL").innerText = "Addition is :" + add
+        }
+
+    </script>
+
+</head>
+<body>
+    
+    <form >
+        <table>
+            <tr>
+                <td>Enter first Number :</td>   
+                <td><input type="number" name="x" id="x"></td>
+            </tr>
+            <tr>
+                <td>Enter Second Number:</td>
+                <td><input type="number" name="y" id="y"> </td>
+            </tr>
+            <tr>
+                <td><input type="button" value="Add" onclick="Ad(x.value,y.value)"></td>
+            </tr>
+
+        </table>
+    </form>
+
+    <div id="LLL">Addition is :</div>
+
+</body>
+</html>
