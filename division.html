@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function division(x,y){
+            var res = (parseInt(x) / parseInt(y));
+
+            document.getElementById("result").innerHTML="Division : "+res;
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+        <table>
+            <tr>
+                <td><label for="">enter first no:</label></td>
+                <td><input type="number" id="x" name="x"></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Enter Second Nmmber: </label>
+                    <input type="number" id="y" name="y">
+                </td>
+            </tr>
+            <tr>
+                <td><input type="button" value="Division" onclick="division(x.value,y.value)"></td>
+            </tr>
+        </table>
+    </form>
+    <div id="result"></div>
+</body>
+</html>
