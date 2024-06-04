@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        function s(x,y)
+        {
+            var s1 = parseInt(x) - parseInt(y)
+
+            document.getElementById("ABC").innerText=s1;
+        }
+
+    </script>
+    
+</head>
+<body>
+    
+
+<form >
+    <table>
+        <tr>
+            <td>Enter Two numbers</td>
+        </tr>
+        <tr>
+          
+            <td><input type="number" name="x"></td>
+        </tr>
+        <tr>
+            <td><input type="number" name="y"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="Substract" name="sub" onclick="s(x.value,y.value)"></td>
+        </tr>
+    </table>
+</form>
+
+<div id="ABC"></div>
+
+
+</body>
+</html>
